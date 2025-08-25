@@ -1,11 +1,7 @@
-import { Redirect, Stack, router } from 'expo-router';
-import { View } from 'react-native';
-import { AntDesign, MaterialIcons, Entypo } from '@expo/vector-icons';
+import { Slot } from "expo-router";
 
-export default function AppLayout() {
-    return (
-        <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        </Stack>
-    )
+export default function RootLayout() {
+  return (
+    <Slot />
+  );
 }
